@@ -20,15 +20,16 @@
 
 
 ## items テーブル
-| Column        | Type    | Options                        |
-| --------------| ------- | ------------------------------ |
-| name          | string  | null: false                    |
-| description   | text    | null: false                    |
-| condition     | text    | null: false                    |
-| shipping_cost | string  | null: false                    |
-| days          | date    | null: false                    |
-| sender        | string  | null: false                    |
-| price         | integar | null: false                    |
+| Column           | Type    | Options                        |
+| -----------------| ------- | ------------------------------ |
+| name             | string  | null: false                    |
+| description      | text    | null: false                    |
+| category_id      | integer | null: false                    |
+| condition_id     | integer | null: false                    |
+| shipping_cost_id | integer | null: false                    |
+| sender_id        | integer | null: false                    |
+| days_id          | integer | null: false                    |
+| price            | integar | null: false                    |
 
 ### Association
 - belongs_to :user
@@ -59,5 +60,4 @@
 | order         | references| null: false, foreign_key: true |
 
 ### Association
-- belongs_to :user
 - belongs to :order
