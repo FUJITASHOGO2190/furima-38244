@@ -27,7 +27,7 @@
 | category_id      | integer | null: false                    |
 | condition_id     | integer | null: false                    |
 | shipping_cost_id | integer | null: false                    |
-| sender_id        | integer | null: false                    |
+| prefecture_id    | integer | null: false                    |
 | days_id          | integer | null: false                    |
 | price            | integar | null: false                    |
 
@@ -52,7 +52,7 @@
 | Column        | Type      | Options                        |
 | --------------| --------  | ------------------------------ |
 | post_code     | string    | null: false                    |
-| prefecture    | string    | null: false                    |
+| prefecture_id | string    | null: false                    |
 | city          | string    | null: false                    |
 | address       | string    | null: false                    |
 | building_name | string    | null: false                    |
