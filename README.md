@@ -6,7 +6,7 @@
 | email                | string | null: false   unique: true   |
 | encrypted_password   | string | null: false                  |
 | nickname             | string | null: false                  |
-| birthday             | string | null: false                  |
+| birthday             | date   | null: false                  |
 | family_name          | string | null: false                  |
 | first_name           | string | null: false                  |
 | family_name_kana     | string | null: false                  |
@@ -26,12 +26,13 @@
 | description   | text    | null: false                    |
 | condition     | text    | null: false                    |
 | shipping_cost | string  | null: false                    |
+| days          | date    | null: false                    |
 | sender        | string  | null: false                    |
 | price         | integar | null: false                    |
 
 ### Association
 - belongs_to :user
-- belongs to :order
+- has_one :order
 
 
 ## orders テーブル
@@ -39,11 +40,11 @@
 | Column    | Type       | Options                        |
 | ----------| ---------- | ------------------------------ |
 | item      | references | null: false, foreign_key: true |
-| user      | reference  | null: false, foreign_key: true |
+| user      | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :user
-- has_many :items
+- belongs_to :item
 - has_one  :address
 
 ## addresses テーブル
@@ -54,9 +55,9 @@
 | city          | string    | null: false                    |
 | address       | string    | null: false                    |
 | building_name | string    | null: false                    |
-| phon_number   | integar   | null: false                    |
-| order         | reference | null: false, foreign_key: true |
+| phon_number   | string    | null: false                    |
+| order         | references| null: false, foreign_key: true |
 
 ### Association
-- belongs_to :address
--
+- belongs_to :user
+- belongs to :order
