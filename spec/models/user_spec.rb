@@ -57,6 +57,51 @@ RSpec.describe User, type: :model do
         @user.valid?
         expect(@user.errors.full_messages).to include('Email is invalid')
       end
+      it '苗字が必須' do
+        @user.family_name = ''
+        @user.valid?
+        expect(@user.errors.full_messages).to include("Family name can't be blank")
+      end
+      it '苗字が半角' do
+        @user.family_name = 'Yamada'
+        @user.valid?
+        expect(@user.errors.full_messages).to include("Family name 全角文字を使用してください")
+      end
+      it '名前が必須' do
+        @user.first_name = ''
+        @user.valid?
+        expect(@user.errors.full_messages).to include("First name can't be blank")
+      end
+      it '名前が半角' do
+        @user.first_name = 'Tatou'
+        @user.valid?
+        expect(@user.errors.full_messages).to include("First name 全角文字を使用してください")
+      end
+      it '苗字(カナ)が必須' do
+        @user.family_name_kana = ''
+        @user.valid?
+        expect(@user.errors.full_messages).to include("Family name kana can't be blank", )
+      end
+      it '苗字(カナ)が半角' do
+        @user.family_name_kana = 'ﾔﾏﾀﾞ'
+        @user.valid?
+        expect(@user.errors.full_messages).to include("Family name kana 全角カナ文字を使用してください")
+      end
+      it '名前（カナ）が必須' do
+        @user.first_name_kana = ''
+        @user.valid?
+        expect(@user.errors.full_messages).to include("First name kana can't be blank")
+      end
+      it '名前（カナ）が必須' do
+        @user.first_name_kana = 'ﾀﾛｳ'
+        @user.valid?
+        expect(@user.errors.full_messages).to include("First name kana 全角カナ文字を使用してください")
+      end
+      it '誕生日が必須' do
+        @user.birthday = ''
+        @user.valid?
+        expect(@user.errors.full_messages).to include("Birthday can't be blank")
+      end
     end
   end
 end
