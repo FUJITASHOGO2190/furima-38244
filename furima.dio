@@ -45,7 +45,7 @@
                 <mxCell id="21" value="prefectures_id (integar型　NOTNULL)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="19" vertex="1">
                     <mxGeometry y="56" width="280" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" value="city (string型　NOTNULL)&#10;&#10;adress (string型　NOTNULL)&#10;&#10;building_name (string型　NOTNULL)&#10;&#10;phon_number (string型　NOTNULL)&#10;&#10;order_id  (references型　NOTNULL 外部キー)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="19" vertex="1">
+                <mxCell id="22" value="city (string型　NOTNULL)&#10;&#10;adress (string型　NOTNULL)&#10;&#10;building_name (string型　NOTNULL)&#10;&#10;phon_number (string型　NOTNULL)&#10;&#10;order  (references型　NOTNULL 外部キー)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="19" vertex="1">
                     <mxGeometry y="86" width="280" height="186" as="geometry"/>
                 </mxCell>
                 <mxCell id="26" value="" style="fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;exitX=0.425;exitY=1.023;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.019;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="10" target="17" edge="1">
