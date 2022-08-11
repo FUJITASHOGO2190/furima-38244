@@ -5,8 +5,11 @@ class Item < ApplicationRecord
 
   has_one_attached :image
 
-  belongs_to :category
-  belongs_to :condition
+  belongs_to :category_id
+  belongs_to :condition_id
+  belongs_to :shipping_cost_id
+  belongs_to :prefecture_id
+  belongs_to :scheduled_day_id
 
   with_options presence: true do
     validates :user
