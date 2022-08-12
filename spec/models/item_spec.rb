@@ -40,7 +40,7 @@ RSpec.describe Item, type: :model do
       it 'ユーザー登録している人でないと出品できない' do
         @item.user = nil
         @item.valid?
-        expect(@item.errors.full_messages).to include("User must exist")
+        expect(@item.errors.full_messages).to include('User must exist')
       end
       it '１枚画像がないと出品できない' do
         @item.image = nil
@@ -70,7 +70,7 @@ RSpec.describe Item, type: :model do
       it '商品の状態の情報が「---」だと出品できない' do
         @item.condition_id = 0
         @item.valid?
-        expect(@item.errors.full_messages).to include("Condition must be other than 0")
+        expect(@item.errors.full_messages).to include('Condition must be other than 0')
       end
       it '商品の状態の情報が空欄だと出品できない' do
         @item.condition_id = ''
@@ -100,7 +100,7 @@ RSpec.describe Item, type: :model do
       it '発送までの日数の情報が「---」だと出品できない' do
         @item.scheduled_day_id = 0
         @item.valid?
-        expect(@item.errors.full_messages).to include("Scheduled day must be other than 0")
+        expect(@item.errors.full_messages).to include('Scheduled day must be other than 0')
       end
       it '発送までの日数の情報が空欄だと出品できない' do
         @item.scheduled_day_id = ''
@@ -123,9 +123,9 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include('Price must be less than or equal to 9999999')
       end
       it '価格に半角数字以外が含まれている場合は出品できない' do
-        @item.price ='abあい'
+        @item.price = 'abあい'
         @item.valid?
-        expect(@item.errors.full_messages).to include("Price is not a number")
+        expect(@item.errors.full_messages).to include('Price is not a number')
       end
     end
   end
