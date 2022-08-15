@@ -63,12 +63,12 @@ RSpec.describe OrderForm, type: :model do
       it '郵便番号にハイフンがないと保存できないこと' do
         @order_form.post_code = 1_234_567
         @order_form.valid?
-        expect(@order_form.errors.full_messages).to include("Post code is invalid")
+        expect(@order_form.errors.full_messages).to include('Post code is invalid')
       end
       it '都道府県が「---」だと保存できないこと' do
         @order_form.prefecture_id = 0
         @order_form.valid?
-        expect(@order_form.errors.full_messages).to include("Prefecture must be other than 0")
+        expect(@order_form.errors.full_messages).to include('Prefecture must be other than 0')
       end
       it '都道府県が空だと保存できないこと' do
         @order_form.prefecture_id = nil
@@ -93,12 +93,12 @@ RSpec.describe OrderForm, type: :model do
       it '電話番号にハイフンがあると保存できないこと' do
         @order_form.phon_number = '123 - 1234 - 1234'
         @order_form.valid?
-        expect(@order_form.errors.full_messages).to include("Phon number is invalid")
+        expect(@order_form.errors.full_messages).to include('Phon number is invalid')
       end
       it '電話番号が12桁以上あると保存できないこと' do
         @order_form.phon_number = 12_345_678_910_123_111
         @order_form.valid?
-        expect(@order_form.errors.full_messages).to include("Phon number is invalid")
+        expect(@order_form.errors.full_messages).to include('Phon number is invalid')
       end
     end
   end
