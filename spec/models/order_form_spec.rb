@@ -102,17 +102,17 @@ RSpec.describe OrderForm, type: :model do
         @order_form.phon_number = 12_345_678_910_123_111
         @order_form.valid?
         expect(@order_form.errors.full_messages).to include('Phon number is invalid')
-      end 
-        it 'トークンが空だと保存できないこと' do
-          @order_form.token = nil
-          @order_form.valid?
-          expect(@order_form.errors.full_messages).to include("Token can't be blank")
+      end
+      it 'トークンが空だと保存できないこと' do
+        @order_form.token = nil
+        @order_form.valid?
+        expect(@order_form.errors.full_messages).to include("Token can't be blank")
       end
       it '電話番号が9桁以下だと保存できないこと' do
         @order_form.phon_number = 12_345_678
         @order_form.valid?
-        expect(@order_form.errors.full_messages).to include("Phon number is invalid")
-      end 
+        expect(@order_form.errors.full_messages).to include('Phon number is invalid')
+      end
     end
   end
 end
