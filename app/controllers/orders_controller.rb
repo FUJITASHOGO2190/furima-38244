@@ -1,14 +1,13 @@
 class OrdersController < ApplicationController
   before_action :authenticate_user!
   before_action :non_purchased_item, only: [:index, :create, :edit]
+  before_action :set_item, only: [:index, :create]
 
   def index
     @order_form = OrderForm.new
-    @item = Item.find(params[:item_id])
   end
 
   def create
-    @item = Item.find(params[:item_id])
     @order_form = OrderForm.new(address_params)
     if @order_form.valid?
       pay_item
@@ -40,4 +39,9 @@ class OrdersController < ApplicationController
       currency: 'jpy'            
     )
   end
+
+  def set_item
+    @item = Item.find(params[:item_id])
+  end
+
 end
