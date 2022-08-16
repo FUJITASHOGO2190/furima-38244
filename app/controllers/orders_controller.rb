@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   before_action :authenticate_user!
-  before_action :non_purchased_item, only: [:index, :create]
+  before_action :non_purchased_item, only: [:index, :create, :edit]
 
   def index
     @order_form = OrderForm.new
