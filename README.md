@@ -14,6 +14,7 @@
 - 出品一覧から気に入った商品を選択。
 - 購入画面からクレジットカード情報、配送先を入力して購入する。
 
+
 # 実装機能
 ### トップページ
 [![Image from Gyazo](https://i.gyazo.com/8a67cf143765064753abeba59adfc0ec.gif)](https://gyazo.com/8a67cf143765064753abeba59adfc0ec)
