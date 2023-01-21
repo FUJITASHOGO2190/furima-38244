@@ -16,8 +16,6 @@
 
 
 # 実装機能
-### トップページ
-[![Image from Gyazo](https://i.gyazo.com/44a7b14cb0f796252c1731f3d0c46474.gif)](https://gyazo.com/44a7b14cb0f796252c1731f3d0c46474)
 
 ### ユーザー新規登録機能
 [![Image from Gyazo](https://i.gyazo.com/50a4586ed06ddc74d30f6c9d28570d2b.gif)](https://gyazo.com/50a4586ed06ddc74d30f6c9d28570d2b)
