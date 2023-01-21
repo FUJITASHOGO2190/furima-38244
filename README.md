@@ -27,7 +27,7 @@
 [![Image from Gyazo](https://i.gyazo.com/795c1846c1b5487a86d2e33bc576ebaa.gif)](https://gyazo.com/795c1846c1b5487a86d2e33bc576ebaa)
 
 ### 商品出品機能
-[![Image from Gyazo](https://i.gyazo.com/d20f93afcdb953a635c2740c0fbc7d83.gif)](https://gyazo.com/d20f93afcdb953a635c2740c0fbc7d83)
+[![Image from Gyazo](https://i.gyazo.com/7aaac975a8d5f59c5179cacf65862f20.gif)](https://gyazo.com/7aaac975a8d5f59c5179cacf65862f20)
 
 ### 商品購入機能
 [![Image from Gyazo](https://i.gyazo.com/0d27998d9d66b8e74a60af255ce2d314.gif)](https://gyazo.com/0d27998d9d66b8e74a60af255ce2d314)
