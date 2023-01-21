@@ -16,6 +16,9 @@
 
 
 # 実装機能
+### トップページ
+![screencapture-localhost-3000-2023-01-21-18_50_16](https://user-images.githubusercontent.com/109502472/213862284-348ab0ba-1d32-4d18-98e7-9a1d56e376a1.png)
+
 
 ### ユーザー新規登録機能
 [![Image from Gyazo](https://i.gyazo.com/50a4586ed06ddc74d30f6c9d28570d2b.gif)](https://gyazo.com/50a4586ed06ddc74d30f6c9d28570d2b)
