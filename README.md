@@ -95,3 +95,14 @@
 
 ### Association
 - belongs to :order
+
+# 画面遷移図
+[![Image from Gyazo](https://i.gyazo.com/e99e0550a35d979c90fb88cd9957c2e1.png)](https://gyazo.com/e99e0550a35d979c90fb88cd9957c2e1)
+
+# 開発環境
+- Ruby
+- Ruby on Rails
+- MySQL
+- GitHub
+- AWS
+- Visual Studio Code
